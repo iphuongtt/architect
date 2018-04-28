@@ -1,6 +1,6 @@
 <?php
 
-namespace Optimus\Architect;
+namespace Iphuongtt\Architect;
 
 use InvalidArgumentException;
 use Illuminate\Support\Collection;
@@ -134,7 +134,7 @@ class Architect
     /**
      * Resolve a mode resolver class if it has not been resolved before
      * @param  string $mode The mode to be resolved
-     * @return Optimus\Architect\ModeResolver\ModeResolverInterface
+     * @return Iphuongtt\Architect\ModeResolver\ModeResolverInterface
      */
     private function resolveMode($mode)
     {
@@ -148,11 +148,11 @@ class Architect
     /**
      * Instantiate a mode resolver class
      * @param  string $mode [description]
-     * @return Optimus\Architect\ModeResolver\ModeResolverInterface
+     * @return Iphuongtt\Architect\ModeResolver\ModeResolverInterface
      */
     private function createModeResolver($mode)
     {
-        $class = 'Optimus\Architect\ModeResolver\\';
+        $class = 'Iphuongtt\Architect\ModeResolver\\';
         switch ($mode) {
             default:
             case 'embed':

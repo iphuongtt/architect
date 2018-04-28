@@ -1,10 +1,10 @@
 # Architect
 
-[![Latest Version](https://img.shields.io/github/release/esbenp/architect.svg?style=flat-square)](https://github.com/esbenp/architect/releases)
+[![Latest Version](https://img.shields.io/github/release/iphuongtt/architect.svg?style=flat-square)](https://github.com/iphuongtt/architect/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Build Status](https://img.shields.io/travis/esbenp/architect/master.svg?style=flat-square)](https://travis-ci.org/esbenp/architect)
-[![Coverage Status](https://img.shields.io/coveralls/esbenp/architect.svg?style=flat-square)](https://coveralls.io/github/esbenp/architect)
-[![Total Downloads](https://img.shields.io/packagist/dt/optimus/architect.svg?style=flat-square)](https://packagist.org/packages/optimus/architect)
+[![Build Status](https://img.shields.io/travis/iphuongtt/architect/master.svg?style=flat-square)](https://travis-ci.org/iphuongtt/architect)
+[![Coverage Status](https://img.shields.io/coveralls/iphuongtt/architect.svg?style=flat-square)](https://coveralls.io/github/iphuongtt/architect)
+[![Total Downloads](https://img.shields.io/packagist/dt/iphuongtt/architect.svg?style=flat-square)](https://packagist.org/packages/iphuongtt/architect)
 
 ## Introduction
 
@@ -123,19 +123,19 @@ and `Illuminate\Database\Eloquent\Model`.
 
 $books = Book::with('Author')->get();
 
-$architect = new \Optimus\Architect\Architect;
+$architect = new \Iphuongtt\Architect\Architect;
 $parsed = $architect->parseData($books, [
     'author' => 'sideload' // can also be embed or ids (embed is default)
 ], 'books');
 ```
 
-[Optimus\LaravelController](https://github.com/esbenp/laravel-controller) gives
+[Iphuongtt\LaravelController](https://github.com/iphuongtt/laravel-controller) gives
 nice convenience methods to define the Architect relationships in query parameters.
 
 ## Installation
 
 ```bash
-composer require optimus/architect ~1.0
+composer require iphuongtt/architect ~1.0
 ```
 
 ## Standards
